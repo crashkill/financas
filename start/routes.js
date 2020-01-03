@@ -3,10 +3,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use("Route");
 
-Route.get("projetos", "ProjetoController.index");
-//Route.post('sessions', 'SessionController.store')
-//Route.post('passwords', 'ForgotpasswordController.store')
-
 const GraphqlAdonis = use("ApolloServer");
 const schema = require("../app/data/schema");
 
