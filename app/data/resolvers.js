@@ -1,7 +1,7 @@
 "use strict";
 
 const User = use("App/Models/User");
-const Post = use("App/Models/User");
+const Projetos = use("App/Models/Projeto");
 
 // Define resolvers
 const resolvers = {
@@ -15,6 +15,10 @@ const resolvers = {
     async fetchUser(_, { id }) {
       const user = await User.find(id);
       return user.toJSON();
+    },
+    async allProjects() {
+      const projetos = await Projetos.all();
+      return projetos.toJSON();
     }
   },
 

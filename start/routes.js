@@ -3,7 +3,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use("Route");
 
-//Route.post('users', 'UserController.store')
+Route.get("projetos", "ProjetoController.index");
 //Route.post('sessions', 'SessionController.store')
 //Route.post('passwords', 'ForgotpasswordController.store')
 
