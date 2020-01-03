@@ -7,6 +7,7 @@ tmp
 # Environment variables, never commit this file
 .env
 package-lock.json
+yarn-error.log
 
 # The development sqlite file
 database/*.sqlite
