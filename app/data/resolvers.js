@@ -16,9 +16,13 @@ const resolvers = {
       const user = await User.find(id);
       return user.toJSON();
     },
-    async allProjects() {
-      const projetos = await Projetos.all();
-      return projetos.toJSON();
+    async Projects() {
+      const projeto = await Projetos.all();
+      return projeto.toJSON();
+    },
+    async fetchProject(_, { COD_PROJETO }) {
+      const projeto = await Projetos.findBy("COD_PROJETO", COD_PROJETO);
+      return projeto.toJSON();
     }
   },
 

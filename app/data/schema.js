@@ -36,7 +36,8 @@ const typeDefs = `
     type Query {
       allUsers: [User]
       fetchUser(id: Int!): User
-      allProjects: [Projeto]
+      Projects: [Projeto]
+      fetchProject(COD_PROJETO: String!): Projeto
     }
     type Mutation {
       login (email: String!, password: String!): String
